@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block header %}Welcome to my world!{% endblock %}
+
+{% block content %}
+
+{% for Profile in profiles %}
+    <ul>
+        <li>{{ Profile.Username }}</li>
+    </ul>
+{% endfor %}
+
+{% endblock %}
